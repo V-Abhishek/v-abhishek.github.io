@@ -4,8 +4,8 @@
 
 // Preloader
 $(window).on('load', function () {
-	$('.lds-ellipsis').fadeOut(); // will first fade out the loading animation
-	$('.preloader').delay(333).fadeOut('slow'); // will fade out the white DIV that covers the website.
+	$('.lds-ellipsis').fadeOut(); 
+	$('.preloader').delay(333).fadeOut('slow'); 
 	$('body').delay(333);
 });
 
@@ -170,7 +170,6 @@ $(this).magnificPopup({
 });
 });
 
-
 /*------------------------------------
     Isotope Portfolio Filter
 -------------------------------------- */
@@ -232,14 +231,6 @@ $(".wow").each(function() {
  }
 });
 
-/*------------------------------------
-    YTPlayer YouTube Background
--------------------------------------- */
-
-$(".player").each(function () {
-    $(this).mb_YTPlayer();
-});
-
 /*------------------------
    tooltips
 -------------------------- */
@@ -261,3 +252,5 @@ $('#back-to-top').on("click", function() {
 	$('html, body').animate({scrollTop:0}, 'slow');
 	return false;
 });
+
+})(jQuery)
